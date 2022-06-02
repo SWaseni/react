@@ -6,6 +6,7 @@ import Login from './components/Login/Login';
 import Preferences from './components/Preferences/Preferences';
 
 function setToken(userToken) {
+  sessionStorage.setItem('token', JSON.stringify(userToken));
 }
 
 function getToken() {
